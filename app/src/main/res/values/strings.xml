@@ -3,6 +3,6 @@
     <string name="card_title">Card Title</string>
 
 
-    <item name="visible"  type="id"/>
-    <item name="masked" type="id"/>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
 </resources>

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Timer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,15 @@
         </activity>
         <activity android:name=".branch.CseActivity" />
         <activity android:name=".branch.EceActivity" />
-        <activity android:name=".Signup"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Zones" />
+        <activity android:name=".branchIndividualActivities.CseActivity1" />
+        <activity android:name=".branchIndividualActivities.CseActivity2" />
+        <activity android:name=".branchIndividualActivities.CseActivity3" />
+        <activity android:name=".branchIndividualActivities.CseActivity4" />
+        <activity android:name=".branchIndividualActivities.CseActivity5" />
+        <activity android:name=".branchIndividualActivities.CseActivity6" />
+        <activity android:name=".branchIndividualActivities.CseActivity7"></activity>
     </application>
 
 </manifest>

@@ -2,7 +2,11 @@ package com.example.mravi.collapsingtoolbar.branch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mravi.collapsingtoolbar.R;
 
@@ -21,7 +25,8 @@ private static final String TAG="CseActivity";
         setContentView(R.layout.listview_layout);
 
         mListView=(ListView)findViewById(R.id.listView);
-
+//text
+        TextView v=(TextView) mListView.findViewById(R.id.cardTitle);
 
         ArrayList<Card> list=new ArrayList<>();
 
@@ -37,5 +42,20 @@ private static final String TAG="CseActivity";
         mListView.setAdapter(adapter);
 
 
+ mListView.setOnItemClickListener(
+         new AdapterView.OnItemClickListener() {
+     @Override
+     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+         TextView v=(TextView)view.findViewById(R.id.cardTitle);
+         Toast.makeText(CseActivity.this, "kjfldkfjakldfjlajfalkfjal"+v.getText(), Toast.LENGTH_SHORT).show();
+     }
+ });
+
+
+
+
     }
+
+
+
 }
